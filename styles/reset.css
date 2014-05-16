@@ -1,0 +1,147 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+
+The basics
+
+I started by removing elements that have been deprecated from the HTML 5
+specification, like <acronym>, <center> and <big>. (We’ll cover deprecated
+elements in more detail in another post). I also added new HTML 5 elements,
+like and, in order to remove any default padding, margin, and borders. I’ve
+also added an explicit display:block property for elements that are required to
+render as blocks.
+
+I also removed the explicit unstyling of the :focus pseudo-class. There are two
+reasons for this. First, by declaring outline:0, you remove the focus
+identifier for keyboard users. Second, Eric released his stylesheet in good
+faith that people would explicitly style :focus, but they generally don’t, so
+it’s safer to leave the default :focus styles in place. (I also set defaults
+for <ins>, since I don’t think that got updated very often either.)
+
+I’ve left the default list styles in place simply as a personal preference. I
+tend to add the list style back when using Eric’s reset anyway. I have,
+however, included nav ul {list-style:none;} to remove those pesky bullets from
+your navigation.  Using attribute selectors
+
+You’ll notice that I’ve included attribute selectors for <abbr> and <dfn>. This
+way, the style will only appear if there is a title attribute on the element.
+This is primarily for accessibility. For example, we use <abbr> regularly on
+this site but don’t always include a title attribute. We think it’s safe to
+assume all of our readers (no matter what device they’re using) know what HTML
+stands for. We do still use the <abbr> element to make sure screen readers read
+the text as H-T-M-L rather than struggling to pronounce “HTML”.  What’s that
+bit about mark?
+
+<mark> is a new element introduced in HTML 5 used to (you guessed it) mark text
+in a document. According to the spec: "“The mark element represents a run of
+text in one document marked or highlighted for reference purposes, due to its
+relevance in another context.”". I anticipate it will be used for highlighting
+phrases in search results and other similar purposes. We’ll post more on <mark>
+soon.  Where are all those application elements?
+
+Application elements is a term I’ve loosely used to describe elements like
+menu, etc. These elements are more likely found in web apps than web sites. I
+left these out since, at the time of writing, browsers implement barely any of
+what was “Web Applications 1.0″. Also, this stylesheet is intended primarily
+for authors serving their pages as text/html, not XML.
+
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    color:#666;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}

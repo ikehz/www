@@ -1,0 +1,141 @@
+/*
+ * base.css
+ *
+ * The base layout stylesheet for ~ihm
+ *
+ * @author ihm
+ */
+
+/*
+ * generics
+ */
+
+html {
+	font-family:sans-serif;
+	font-size:.8em;
+}
+
+h1 {
+	text-align:center;
+	font-size:2.5em;
+	margin:.5em;
+}
+
+h2 {
+	text-align:center;
+	font-size:1.2em;
+	margin:.5em;
+	color:#c60;
+}
+
+h3 {
+	text-align:center;
+	font-size:1em;
+	margin:.5em;
+	color:#666;
+}
+
+h4 {
+	text-align:center;
+	font-size:1.2em;
+	margin:.5em;
+	color:#666;
+}
+
+h5 {
+	text-align:center;
+	font-size:1em;
+	margin:.5em;
+}
+
+p {
+	padding:.8em;
+	text-align:justify;
+	line-height:1.2em;
+}
+
+article {
+	padding:0 0 3em 0;
+}
+
+aside {
+	padding:1em;
+	text-align:center;
+}
+
+ul {
+	margin:1em;
+}
+
+dt {
+	text-align:left;
+	font-size:1.5em;
+	font-weight:bold;
+	margin:.3em .3em 0 .3em;
+	color:#600;
+}
+
+dd {
+	text-align:left;
+	font-size:1em;
+	margin:0em 1em 1em 2em;
+	color:#666;
+}
+
+/*
+ * hgroup
+ */
+
+hgroup h2 a {
+	color:#c60;
+	text-decoration:none;
+}
+
+hgroup h2 a:hover {
+	color:#f60;
+}
+
+/*
+ * body
+ */
+
+body {
+	width:600px;
+	margin:auto;
+}
+
+/*
+ * nav
+ */
+
+nav {
+	text-align:center;
+}
+
+nav ul li {
+	display:inline-block;
+	width:80px;
+	padding:.5em;
+}
+
+nav ul li a {
+	text-decoration:none;
+	color:#c60;
+}
+
+nav ul li a:hover {
+	color:#f60;
+}
+
+nav ul li a {
+	text-decoration:none;
+}
+
+/*
+ * article
+ */
+
+img#headshot {
+	float:right;
+	margin:1em;
+}
